@@ -18,12 +18,39 @@ public class SeasonsHomework {
      * foreach, switch
      */
     public static void main(String[] args) {
-//        solution 1: fori + if
+        int[] months = {1,2, 3,4,5 ,6,7,8, 9,10,11, 12};
+        String[] monthsName= {"January","February","March","April","May","June","July","August","September","October","November","December"};
+
+        for (int i = 0; i < months.length; i++) {
+            // System.out.println(monthsName[months[i]-1]); urish tarberak
 
 
+            if(months[i]==1){
+                System.out.println(monthsName[0]);
+            }
+            else if(months[i]==3){
+                System.out.println(monthsName[2]);
+            }
+
+        }
+        System.out.println("////");
+          for (int month : months){
+             // System.out.println(monthsName[month-1]);
+              switch (month){
+                  case 1:
+                      System.out.println(monthsName[0]);
+                      break;
+                  case 2:
+                      System.out.println(monthsName[1]);
+                      break;
+                  case 3:
+                      System.out.println(monthsName[2]);
+                      break;
+              }
+
+          }
 
 
-//        solution 2: foreach + switch
 
 
 
